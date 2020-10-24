@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/unchecked_dis" android:drawable="@drawable/rb_deselected_disabled" android:state_checked="false" android:state_enabled="false"/>
+    <item android:id="@+id/checked_dis" android:drawable="@drawable/rb_selected_disabled" android:state_checked="true" android:state_enabled="false"/>
+    <item android:id="@+id/unchecked" android:drawable="@drawable/ic_radio_unchecked" android:state_checked="false" />
+    <item android:id="@+id/checked" android:drawable="@drawable/ic_radio_checked" android:state_checked="true"/>
+
+    <transition android:fromId="@+id/unchecked" android:toId="@+id/checked">
+        <animation-list>
+            <item android:duration="18"  android:drawable="@drawable/ic_radio_unchecked" />
+            <item android:duration="18"  android:drawable="@drawable/ic_radio_unchecked" />
+            <item android:duration="18"  android:drawable="@drawable/ic_radio_unchecked" />
+            <item android:duration="18"  android:drawable="@drawable/ic_radio_unchecked" />
+            <item android:duration="18"  android:drawable="@drawable/ic_radio_unchecked" />
+            <item android:duration="18"  android:drawable="@drawable/ic_radio_unchecked" />
+            <item android:duration="18"  android:drawable="@drawable/ic_radio_down_6" />
+            <item android:duration="18"  android:drawable="@drawable/ic_radio_down_5" />
+            <item android:duration="18"  android:drawable="@drawable/ic_radio_down_4" />
+            <item android:duration="18"  android:drawable="@drawable/ic_radio_down_3" />
+            <item android:duration="18"  android:drawable="@drawable/ic_radio_down_2" />
+            <item android:duration="18"  android:drawable="@drawable/ic_radio_down_1" />
+            <item android:duration="18"  android:drawable="@drawable/ic_radio_checked" />
+        </animation-list>
+    </transition>
+    <transition android:fromId="@+id/checked" android:toId="@+id/unchecked">
+        <animation-list>
+            <item android:duration="18"  android:drawable="@drawable/ic_radio_checked" />
+            <item android:duration="18"  android:drawable="@drawable/ic_radio_down_1" />
+            <item android:duration="18"  android:drawable="@drawable/ic_radio_down_2" />
+            <item android:duration="18"  android:drawable="@drawable/ic_radio_down_3" />
+            <item android:duration="18"  android:drawable="@drawable/ic_radio_down_4" />
+            <item android:duration="18"  android:drawable="@drawable/ic_radio_down_5" />
+            <item android:duration="18"  android:drawable="@drawable/ic_radio_down_6" />
+            <item android:duration="18"  android:drawable="@drawable/ic_radio_unchecked" />
+        </animation-list>
+    </transition>
+</animated-selector>
